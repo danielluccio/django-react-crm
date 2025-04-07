@@ -39,6 +39,9 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
 
+    # App auth
+    "accounts",
+
     #Rest Framework
     "rest_framework",
     #CORS
@@ -95,6 +98,7 @@ DATABASES = {
     }
 }
 
+AUTH_USER_MODEL = 'auth.User'
 
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
